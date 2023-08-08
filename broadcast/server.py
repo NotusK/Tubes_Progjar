@@ -1,6 +1,5 @@
 import socket
 import os
-import threading
 
 def receive_file(connection, file_name):
     path_file = os.path.join("filesofsender/", file_name)
@@ -67,7 +66,7 @@ def handle_client(connection, address, other_connection):
 
 
 def start_server():
-    host = '192.168.18.159'
+    host = '192.168.18.159' //Ganti sesuai IP
     port = 5000
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

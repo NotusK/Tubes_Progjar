@@ -19,7 +19,7 @@ def receive_file(connection, file_name):
             file.write(data)
 
 def start_client():
-    host = 'localhost'
+    host = 'localhost' //Ganti sesuai IP
     port = 5000
 
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
